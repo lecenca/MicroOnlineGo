@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="645.0" prefWidth="928.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="src.lobby.LobbyController">
+   <children>
+      <Button layoutX="844.0" layoutY="16.0" mnemonicParsing="false" onAction="#logout" text="logout" />
+      <TextField fx:id="inputField" layoutX="605.0" layoutY="522.0" prefHeight="30.0" prefWidth="298.0">
+         <font>
+            <Font size="15.0" />
+         </font></TextField>
+      <Button fx:id="sentBtn" layoutX="839.0" layoutY="570.0" mnemonicParsing="false" onAction="#sent" prefHeight="30.0" prefWidth="64.0" text="发送">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+      <AnchorPane layoutX="54.0" layoutY="28.0" />
+      <Button fx:id="createRoomBtn" layoutX="671.0" layoutY="465.0" mnemonicParsing="false" onAction="#gotoCreateRoom" prefHeight="37.0" prefWidth="97.0" text="新建房间">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <fx:include fx:id="chatBox" source="../component/ChatBox.fxml" />
+      <fx:include fx:id="room" layoutX="37" layoutY="28" prefWidth="504" prefHeight="454" source="Room.fxml" />
+   </children>
+</AnchorPane>
